@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="MVJ_Degree_Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io (1)/site.webmanifest">
+
+    <title>MVJ Degree College</title>
+</head>
+<body>
+   
+    <div class="container_main">
+        <section>
+            <header>
+                <div class="logo">
+                   <a href="MVJ_Degree_Homepage.html"><img src="resources/mvj logo.png" alt=""></a>
+                </div>
+                <div class="navbar_content">
+                    <div class="marquee">
+                        <i class="ri-megaphone-fill"></i>
+                        <marquee behavior="" direction=""> Admissions open for Academic Year 2024-'25</marquee>
+                    </div>
+                    <ul class="navbar">
+                        <a href="MVJ_Degree_Homepage.html"><li class="list_item">Home </li></a>
+                        <li class="dropdown" id="aboutMVJDropdown">About MVJ Degree &#x25BC;
+                            <div class="dropdown-content">
+                                <ul class="submenu">
+                                    <li><a href="MVJ_Degree_About.html" target="_blank">About MVJ Degree College</a></li>
+                                    <li><a href="MVJ_Degree_Principal.html" target="_blank">Principal's Message</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="coursesDropdown">Courses &#x25BC;
+                            <div class="dropdown-content">
+                                <ul class="submenu">
+                                    <li><a href="MVJ_Degree_BBA.html" target="_blank">B.B.A (GENERAL)</a></li>
+                                    <li><a href="MVJ_Degree_BCA.html" target="_blank">BCA - DATA SCIENCE</a></li>
+                                    <li><a href="MVJ_Degree_BCOM.html" target="_blank">B.COM - ACCOUNTING & FINANCE</a></li>
+                                    <li><a href="MVJ_Degree_BSC_CS.html" target="_blank">BSc – COMPUTER SCIENCE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <a href="#" class="tooltip"><li class="list_item">Gallery<span class="tooltiptext">Coming Soon</span></li></a>                    
+                        <a href="#footer"><li class="list_item">Contact Us</li></a>
+                    </ul>
+                </div>
+                
+                <div class="main">
+                    <a href="#" class="user glow-border">Apply Now<i class="ri-send-plane-fill"></i></i></a>
+                    <div class="bx bx-menu" id="menu-icon"></div>
+                </div>
+            </header>
+        </section>
+        <button class="get-in-touch-button" onclick="openPopup()">GET IN TOUCH</button>
+        <div class="overlay" id="overlay">
+            <div class="popup-form">
+                <!-- Your form content goes here -->
+                <h2>GET IN TOUCH FOR ADMISSIONS</h2>
+                <form action="" method="POST">
+                    <!-- Your form fields go here -->
+                    <input type="hidden" name="access_key" value="">
+                    <input type="text" id="user_name" name="Name" placeholder="Name" required>
+                        <br>
+                    <input type="email" id="user_email" name="Email" placeholder="Email" required>
+                    <br>
+                    <input type="text" id="user_contactNo" name="Contact No" placeholder="Phone Number" required>
+                        <br>
+                    <select name="Course" id="course"  placeholder="Select Course" required>
+                        <option value="" disabled selected id="default_course">Select Course</option>
+                        <option value="B.B.A(GENERAL)">B.B.A (GENERAL)</option>
+                        <option value="BCA-DATA SCIENCE">BCA - DATA SCIENCE</option>
+                        <option value="B.COM - ACCOUNTING & FINANCE">B.COM - ACCOUNTING & FINANCE</option>
+                        <option value="BSc – COMPUTER SCIENCE">BSc – COMPUTER SCIENCE</option>
+                    </select>
+                        <br>
+                    <textarea name="Message" id="user_message" cols="10" rows="5" placeholder="Message" required></textarea>
+                    <button type="submit" id="submit">Submit <i class="ri-arrow-right-fill"></i></button>
+                </form>
+                <button onclick="closePopup()" class="close">Close</button>
+            </div>
+        </div>
+        <section class="video-section">
+            <video autoplay muted loop id="background-video">
+                <source src="resources/hero-bg-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <h1>MVJ Degree College</h1>
+                <p class="video-overlay_p">Embark on a journey of academic excellence with MVJ Group of Institutions, offering Degree programs in Science (BCA, BSc Computer Science), Commerce (BCOM), and Management (BBA).Join us to shape your life’s ambitions and realize your dreams.</p>
+                <div class="request_button" onclick="openPopup()">
+                    <p class="request_button_p">Request Information for Admission<i class="ri-arrow-right-fill"></i></p>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="about">
+            <div class="course" id="course">
+                <div class="course_para">
+                 <h1>Courses Offered</h1>
+                     <ul>
+                        <a href="MVJ_Degree_BBA.html" target="_blank"><li class="animated-text">B.B.A (GENERAL)</li></a>
+                        <a href="MVJ_Degree_BCA.html" target="_blank"><li class="animated-text">BCA - DATA SCIENCE</li></a>
+                        <a href="MVJ_Degree_BCOM.html" target="_blank"> <li class="animated-text">B.COM - ACCOUNTING & FINANCE</li></a>
+                        <a href="MVJ_Degree_BSC.html" target="_blank"><li class="animated-text">BSc – COMPUTER SCIENCE</li></a>
+                     </ul>
+                     <br>
+                     <div class="learn_more_button"  onclick="openPopup()">
+                        <p>
+                            Enquire Now
+                        </p>
+                     </div>
+                </div> 
+             </div>
+            <div class="about">
+                <div class="about_para">
+                    <h1>About Us</h1>
+                    <p>
+                        The legacy of MVJ Group of Institutions in serving the society through the medium of Education is well appreciated since 1972. With the emergence of 2024, MVJ Group of Institutions have achieved another milestone in the history with the approval of MVJ Degree College to explore new visions and new horizons for every young adult who enters its portals.
+                    </p>
+                    <p>
+                        MVJ Degree College, affiliated to the Bengaluru North University, has multiplied possibilities and opportunities for its ever expanding student population. We firmly believe in empowering our students to become nation builders as well as leaders. In imparting quality education, we not only creating lifelong learners, but also instilling core values that respect diversity, tolerance, sincerity and integrity.
+                    </p><br>
+                        <div class="learn_more_button_about">
+                            <a href="MVJ_Degree_About.html"><p>Learn More</p></a>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="principal">
+                <div class="principal_content">
+                    <div class="principal_image">
+                        <img src="resources/principal_pic.JPG" alt="">
+                    </div>
+                    <div class="principal_name">
+                        
+                        <p>Dr. Tessy Tom M.Sc, M.Phil., PGDSSA , PhD</p>
+                        <p class="designation">Principal, MVJ Degree College<p></p>
+                    </div>
+                </div>
+                <div class="principal_message">
+                    <div>
+                        <h1>
+                            Principal's Message
+                        </h1>    
+                    </div>
+                    
+                    <p>
+                        Our institution, initiated in 1970, stands as a testament to academic distinction, dedicated to serving a burgeoning student body pursuing degrees in various fields. With our commitment to fostering over 5000 young minds, we aim to set new benchmarks in the educational landscape.
+                    </p>
+                    <div class="learn_more_button_principal">
+                        <a href="MVJ_Degree_Principal.html">
+                            <p>
+                                Read more
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="why_mvj">
+                <div class="why_mvj_para">
+                    <h1>Why MVJ </h1><br>
+                    <p>
+                    With our graduate programs, you will be ready to advance in your career path in the corporate world, become a faculty or pursue an entrepreneurial venture. Our programs are versatile and multi-disciplinary that will take your career to higher levels. We bring in expertise of renowned faculty who are industry practitioners combining real world experience with teaching passion and excellence.
+                    </p>
+                    <p>
+                    We have college located very close to metro station so that it makes avail students of remote location to acquire education in the institute.
+                    </p><br>
+                    <h3>Core Values</h3>
+                    <ul>
+                    <li>Academic Excellence</li>
+                    <li>Inclusiveness</li>
+                    <li>Social Responsibility</li>
+                    <li>Character Building</li>
+                    </ul>
+                </div>
+                <div class="why_mvj_bg">
+                    <img src="resources/bg3.jpeg" alt="">
+                </div>
+            </div>
+            <div class="amenities">
+                <div class="amenities_para">
+                    <h1>Amenities</h1>
+                    <ul>
+                        <li>Library</li>
+                        <li>Cafeteria</li>
+                        <li>Wi-Fi Campus</li>
+                        <li>Auditorium</li>
+                        <li>Labs</li>
+                        <li>Information technology support</li>
+                        <li>Shuttle Facility </li>
+                        <li>Academics with Activities </li>
+                        <li>Commerce and management club ( workshop, conferences, internship, industrial visits &Monthly seminars by guest lecture)</li>
+                        <li>EDP cell (Entrepreneurship development cell)</li>
+                        <li>Intercollegiate level fest& Intercollege sports and Cultural competition</li>
+                        <li>Language club  (Conducts activity to improve communication skills , Cultural and literary)</li>
+                        <li>Ecological activities </li>
+                        <li>Cultural day</li>
+                        <li>Sports day</li>
+                        <li>Educational trip</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="contact_us">
+                <div class="row">
+                    <h1>Want to learn more about MVJ Degree College ?</h1>
+                </div>
+               
+                <div class="row contact_us_main">
+                    <div class="col logo_footer logo">
+                        <a href="MVJ_Degree_Homepage.html"><img src="resources/mvj logo.png" alt=""></a>
+                    </div>
+                    <div class="col contact">
+                        <h1>Contact Us</h1><br>
+                        <span><i class="ri-mail-line"></i> Email: principal-dc@mvjce.edu.in</span><br>
+                        <span><i class="ri-phone-line"></i>Phone: 08042991050 - Principal</span><br>
+                        <span><i class="ri-phone-line"></i>Phone: 08042991090</span><br>
+                        <span><i class="ri-phone-line"></i>Phone: 08042991054</span><br>
+                    </div>
+                    <div class="col address">
+                        <h1>Reach Us</h1><br>
+                        <span><i class="ri-map-pin-line"></i>MVJ Degree College (Whitefield),<br>Near ITPB, Whitefield,<br>Bangalore - 560 067 </span>
+                    </div>
+                </div>
+                <div class="row_rights">
+                    <p><i class="ri-copyright-line"></i>Copyright 2024 MVJ Degree College. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="MVJ_Degree_Script.js"></script>
+</body>
+</html>
