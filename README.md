@@ -1,2 +1,2 @@
-# Loop-Learn-Web-Tool
-A website that helps to memorize Quran verse by verse by looping through YouTube video timestamps.
+# A Website for MVJ Degree College
+A website for MVJ Degree College, Bengaluru.
